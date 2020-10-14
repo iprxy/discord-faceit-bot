@@ -4,12 +4,12 @@ Simple bot to get stats from faceit.com [Add to Discord](https://discord.com/api
 ## Available commands
 ### /stats {faceit nickname}
 Command returns statistic for a player:  
-![stats command](/assets/statsCommand.png)
+<img src="/assets/statsCommand.png" width="300">
 
 On error bot reply you:  
-![stats error](/assets/statsError.png)
+<img src="/assets/statsError.png" width="300">
 ### /search {faceit nickname}
 Command returns search results  
-![stats error](/assets/searchResult.png)
+<img src="/assets/searchResult.png" width="300">
 
 P.S: Tokens in config are revoked :P
