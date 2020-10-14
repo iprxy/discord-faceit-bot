@@ -1,5 +1,6 @@
 # discord-faceit-bot
-Simple bot to get stats from faceit.com [Add to Discord](https://discord.com/api/oauth2/authorize?client_id=765642102800646146&permissions=18432&scope=bot)
+Simple bot to get stats from faceit.com [Add to Discord](https://discord.com/api/oauth2/authorize?client_id=765642102800646146&permissions=18432&scope=bot)  
+top.gg [link](https://top.gg/bot/765642102800646146)
 
 ## Available commands
 ### /stats {faceit nickname}
