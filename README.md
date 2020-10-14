@@ -11,5 +11,3 @@ On error bot reply you:
 ### /search {faceit nickname}
 Command returns search results  
 <img src="/assets/searchResult.png" width="450">
-
-P.S: Tokens in config are revoked :P
