@@ -12,4 +12,4 @@ On error bot reply you:
 Command returns search results  
 ![stats error](/assets/searchResult.png)
 
-P.S:Tokens in config are revoked :P
+P.S: Tokens in config are revoked :P
