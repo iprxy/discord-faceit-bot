@@ -1,6 +1,6 @@
 
 # discord-faceit-bot
-Simple bot to get stats from faceit.com
+Simple bot to get stats from faceit.com 
 [![Discord Bots](https://top.gg/api/widget/765642102800646146.svg)](https://top.gg/bot/765642102800646146)
 
 ## Available commands
