@@ -1,3 +1,5 @@
+[![Discord Bots](https://top.gg/api/widget/lib/765642102800646146.svg)](https://top.gg/bot/765642102800646146)
+
 # discord-faceit-bot
 Simple bot to get stats from faceit.com [Add to Discord](https://discord.com/api/oauth2/authorize?client_id=765642102800646146&permissions=18432&scope=bot)  
 top.gg [link](https://top.gg/bot/765642102800646146)
