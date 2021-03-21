@@ -1,3 +1,4 @@
+Note: tokens in commits are revoked 🤗
 
 # discord-faceit-bot
 Simple bot to get CS:GO stats from faceit.com [Add to Discord](https://discord.com/api/oauth2/authorize?client_id=765642102800646146&permissions=18432&scope=bot)  
