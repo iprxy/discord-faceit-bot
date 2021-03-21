@@ -1,10 +1,10 @@
-import embedSearch from '../modules/embedSearch.js'
+import embedLast20Stats from '../modules/embedLast20Stats.js'
 import embedError from '../modules/embedError.js'
 
 export default async function (username, faceit) {
   try {
-    const users = await faceit.searchCSGOUsers(username)
-    return embedSearch(users)
+    const playerStats = await faceit.getLast20Stats(username)
+    return embedLast20Stats(playerStats)
   } catch (err) {
     return embedError(username)
   }
