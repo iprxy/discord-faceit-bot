@@ -11,7 +11,7 @@ Command returns average CS:GO stats for a player:
 <img src="./assets/statsCommand.png" width="450">
 
 ### !last20 {faceit nickname}
-Comant returns average CS:GO stats for a last 20 player matches:
+Command returns average CS:GO stats for a last 20 player matches:
 <img src="./assets/last20Command.png" width="450">
 
 On error bot replies you:  
