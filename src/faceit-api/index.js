@@ -37,7 +37,7 @@ export default class Faceit {
     if (!isNeededUser) `Users with ${username} not found`
 
     const userId = users[0].guid
-    const data = await this._makeRequest(`/core/v1/users/${userId}`)
+    const data = await this._makeRequest(`/users/v1/users?id=${userId}`)
     return data.payload
   }
 
@@ -101,14 +101,14 @@ export default class Faceit {
   async getAverageStats (username) {
     const userInfo = await this._getUserInfo(username)
 
-    if (!userInfo.games.csgo) throw 'User have no CSGO stats on Faceit'
+    if (!userInfo[0].games.csgo) throw 'User have no CSGO stats on Faceit'
 
-    const userId = userInfo.guid
+    const userId = userInfo[0].id
     const userStats = await this._makeRequest(`/stats/api/v1/stats/users/${userId}/games/csgo`)
     const averageStats = await this._transformStats(userStats)
 
-    const { nickname, avatar, country } = userInfo
-    const { skill_level, faceit_elo } = userInfo.games.csgo
+    const { nickname, avatar, country } = userInfo[0]
+    const { skill_level, faceit_elo } = userInfo[0].games.csgo
 
     return {
       nickname,
@@ -123,13 +123,13 @@ export default class Faceit {
   async getLast20Stats (username) {
     const userInfo = await this._getUserInfo(username)
 
-    if (!userInfo.games.csgo) throw 'User have no CSGO stats on Faceit'
-    const userId = userInfo.guid
+    if (!userInfo[0].games.csgo) throw 'User have no CSGO stats on Faceit'
+    const userId = userInfo[0].id
     const userStats = await this._makeRequest(`/stats/api/v1/stats/time/users/${userId}/games/csgo?size=20`)
     const last20Stats = this._calculateAverageStats(userStats, last20StatsMap)
 
-    const { nickname, avatar, country } = userInfo
-    const { skill_level, faceit_elo } = userInfo.games.csgo
+    const { nickname, avatar, country } = userInfo[0]
+    const { skill_level, faceit_elo } = userInfo[0].games.csgo
 
     return {
       nickname,
