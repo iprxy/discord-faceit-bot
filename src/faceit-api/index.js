@@ -30,17 +30,16 @@ export default class Faceit {
   }
 
   async getMatchesList(userId, page) {
-    const matchesList = await this._makeRequest(`stats/v1/stats/time/users/${userId}/games/csgo?page=${page}}&size=2000`)
+    const matchesList = await this._makeRequest(`/stats/v1/stats/time/users/${userId}/games/csgo?page=${page}}&size=2000`)
     return matchesList
   }
 
   async findOpponent (username, opponentname) {
     const userInfo = await this._getUserInfo(username)
     const opponentInfo = await this._getUserInfo(opponentname)
-
     const userId = userInfo[0].id 
     const opponentId = opponentInfo[0].id 
-
+    
     if (userInfo[0].games.csgo && opponentInfo[0].games.csgo) {
       const userMatches = await this.getMatchesList(userId)
       const opponentMatches = await this.getMatchesList(opponentId)
@@ -48,7 +47,6 @@ export default class Faceit {
       const opponentMatchesList = opponentMatches.map(match => match.matchId)
 
       return userMatchesList.filter(x => opponentMatchesList.includes(x))
-
     }
   }
 

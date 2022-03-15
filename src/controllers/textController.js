@@ -32,11 +32,9 @@ export default async function (msg, faceit) {
           embed: stats
         })
         break
-      case 'findMathces':
+      case 'find':
         stats = await findMathes(nickname, faceit)
-        msg.reply({
-          embed: stats
-        })
+        msg.reply({embed: stats})
         break
     }
   }
