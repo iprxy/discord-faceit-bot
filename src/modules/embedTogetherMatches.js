@@ -3,12 +3,12 @@ export default function (username, opponentname,togetherMatches) {
   let results
   if (togetherMatches.length > 10) {
     results = `${resultString}, list of last 10 matches:\n` + 
-      togetherMatches.map(item => `[${item}](https://www.faceit.com/ru/csgo/room/'${item} '')`).slice(0, 10).join('\n')
+      togetherMatches.map(item => `[${item}](https://www.faceit.com/ru/csgo/room/${item} '')`).slice(0, 10).join('\n')
   } else if (!togetherMatches.length) {
     results =  `${nickname} never played with ${opponentname}`
   } else {
     results = `${resultString}:\n` + 
-      togetherMatches.map(item => `[${item}](https://www.faceit.com/ru/csgo/room/'${item} '')`).slice(0, 10).join('\n')
+      togetherMatches.map(item => `[${item}](https://www.faceit.com/ru/csgo/room/${item} '')`).slice(0, 10).join('\n')
   }
   
     return {
