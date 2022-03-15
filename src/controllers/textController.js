@@ -1,6 +1,7 @@
 import playerAverageStats from '../commands/playerAverageStats.js'
 import playerLast20Stats from '../commands/playerLast20Stats.js'
 import searchPlayer from '../commands/playerSearch.js'
+import findMathes from '../commands/findMathes.js'
 
 const COMMAND_PATTERN = /!(.+) (.+)/
 
@@ -27,6 +28,12 @@ export default async function (msg, faceit) {
         break
       case 'search':
         stats = await searchPlayer(nickname, faceit)
+        msg.reply({
+          embed: stats
+        })
+        break
+      case 'findMathces':
+        stats = await findMathes(nickname, faceit)
         msg.reply({
           embed: stats
         })
