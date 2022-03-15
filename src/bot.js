@@ -1,4 +1,3 @@
-import config from './config.js'
 import Discord from 'discord.js'
 import Faceit from './faceit-api/index.js'
 import reactionController from './controllers/reactionsController.js'
