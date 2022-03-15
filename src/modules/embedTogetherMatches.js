@@ -1,7 +1,5 @@
 export default function (matchLinks) {
-    searchResults = matchLinks
-      .map(item => `${item}`).join('\n')
-      .slice(0, 10)
+    searchResults = matchLinks.slice(0, 10)
   
     return {
       color: 16733440,
