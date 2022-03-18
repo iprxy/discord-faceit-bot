@@ -12,9 +12,20 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
-    "discord.js": "^12.3.1"
+    "chartjs-to-image": "^1.0.5",
+    "discord.js": "^12.3.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.15"
   },
   "engines": {
     "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
   }
 }

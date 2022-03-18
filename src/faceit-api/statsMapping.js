@@ -7,8 +7,8 @@ export const last20StatsMap = {
   i13: 'totalHeadshots',
   i14: 'totalTripleKills',
   i15: 'totalQuadroKills',
-  i16: 'totalPentaKills'
-}
+  i16: 'totalPentaKills',
+};
 
 export const averageStatsMap = {
   k1: 'averageKills',
@@ -33,5 +33,5 @@ export const averageStatsMap = {
   m9: 'totalHeadshots',
   m10: 'totalTripleKills',
   m11: 'totalQuadroKills',
-  m12: 'totalPentaKills'
-}
+  m12: 'totalPentaKills',
+};
